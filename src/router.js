@@ -5,7 +5,7 @@ const About = () => import('./views/About.vue');
 
 
 const routes = [
-  { path: '/', component: Home, alias: '/home' },
+  { path: '/', component: Home, alias: '/linktree-clone' },
   { path: '/home', redirect:{ name: 'home'}},
   { path: '/about', component: About },
 ]
