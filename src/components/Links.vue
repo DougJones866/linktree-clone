@@ -1,18 +1,19 @@
 <template>
   <div>
     <header>
-      <h1>Title Goes Here</h1>
+      <h1>This is a linktree clone</h1>
     </header>
     <div class="maincontainer">
+    <div class="iconcontainer">
       <div class="header__icon-box">
         <img
           src="https://i.imgur.com/n4kz0oR.gif"
           alt="icon"
           class="header__icon"
         />
-        <h3>Name Goes Here</h3>
+        <h3>Link Tree</h3>
       </div>
-      <div class="container">
+      <div class="linkcontainer">
         <div class="linkbox">
           <a
             :href="link.href"
@@ -27,6 +28,7 @@
       </div>
 
       
+    </div>
     </div>
   </div>
 </template>
@@ -65,10 +67,15 @@ header {
   justify-content: center;
 }
 .maincontainer {
+  margin: 50px;
+  }
+
+.iconcontainer {
   display: flex;
   padding: 20px;
+
 }
-.container {
+.linkcontainer {
    flex: 50%;
 
   /* background-color: #745ff8; */
@@ -149,7 +156,7 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-  .maincontainer {
+  .iconcontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
